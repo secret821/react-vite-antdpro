@@ -1,10 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-
-@theme {
-  --color-background: #ffffff;
-  --color-foreground: #000000;
-}
+@import './tailwind-theme.css';
 
 @layer base {
   * {

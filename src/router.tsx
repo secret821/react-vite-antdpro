@@ -33,18 +33,23 @@ function ProtectedLayout() {
   )
 }
 
-export const router = createBrowserRouter([
-  { 
-    path: '/login', 
-    element: <LoginRoute />
-  },
+export const router = createBrowserRouter(
+  [
+    { 
+      path: '/login', 
+      element: <LoginRoute />
+    },
+    {
+      path: '/',
+      element: <ProtectedLayout />,
+      children: [
+        { index: true, element: <Dashboard /> },
+        { path: 'stock-orders', element: <StockOrderList /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <ProtectedLayout />,
-    children: [
-      { index: true, element: <Dashboard /> },
-      { path: 'stock-orders', element: <StockOrderList /> },
-    ],
-  },
-])
+    basename: import.meta.env.BASE_URL,
+  }
+)
 

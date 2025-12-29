@@ -7,7 +7,7 @@ import { AuthProvider } from './context/AuthProvider'
 import { router } from './router'
 import './i18n/config'
 import 'antd/dist/reset.css'
-import './index.css'
+import './styles/index.css'
 
 const queryClient = new QueryClient({
   defaultOptions: {

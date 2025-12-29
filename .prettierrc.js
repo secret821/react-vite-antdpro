@@ -18,7 +18,7 @@ module.exports = {
    * Tailwind v4 建议配置
    * 指向项目中引入 tailwind 的 CSS 文件
    */
-  tailwindStylesheet: path.resolve(__dirname, 'src/index.css'),
+  tailwindStylesheet: path.resolve(__dirname, 'src/utils/tailwind-theme.css'),
 
   /**
    * 导入排序规则
