@@ -95,28 +95,28 @@ export function StockOrderList() {
       title: t('stockOrder.price'),
       dataIndex: 'price',
       width: 100,
-      render: (value) => `¥${value}`,
+      render: (value) => (value != null ? `¥${value}` : '-'),
       sorter: true,
     },
     {
       title: t('stockOrder.total'),
       dataIndex: 'total',
       width: 120,
-      render: (value) => `¥${value.toLocaleString()}`,
+      render: (value) => (value != null ? `¥${value.toLocaleString()}` : '-'),
       sorter: true,
     },
     {
       title: t('stockOrder.paid'),
       dataIndex: 'paid',
       width: 120,
-      render: (value) => `¥${value.toLocaleString()}`,
+      render: (value) => (value != null ? `¥${value.toLocaleString()}` : '-'),
       sorter: true,
     },
     {
       title: t('stockOrder.unpaid'),
       dataIndex: 'unpaid',
       width: 120,
-      render: (value) => `¥${value.toLocaleString()}`,
+      render: (value) => (value != null ? `¥${value.toLocaleString()}` : '-'),
       sorter: true,
     },
   ]
@@ -136,7 +136,7 @@ export function StockOrderList() {
             labelWidth: 80,
             searchText: t('common.search'),
             resetText: t('common.reset'),
-            optionRender: (searchConfig, formProps, dom) => [
+            optionRender: (_searchConfig, _formProps, dom) => [
               ...dom.reverse(),
             ],
           }}
