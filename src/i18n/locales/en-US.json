@@ -1,0 +1,59 @@
+{
+  "common": {
+    "user": "User",
+    "logout": "Logout",
+    "search": "Search",
+    "reset": "Reset",
+    "add": "Add",
+    "export": "Export",
+    "total": "Total {{count}} items"
+  },
+  "layout": {
+    "title": "Trading Platform",
+    "home": "Home",
+    "stockOrders": "Stock Subscription Orders"
+  },
+  "login": {
+    "title": "Trading Platform",
+    "subtitle": "Please login to your account",
+    "email": "Email",
+    "emailPlaceholder": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Password",
+    "login": "Login",
+    "loginSuccess": "Login successful",
+    "loginError": "Login failed, please check your email and password",
+    "emailRequired": "Please enter email",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Please enter password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalUsers": "Total Users",
+    "totalOrders": "Total Orders",
+    "totalAmount": "Total Amount",
+    "growthRate": "Growth Rate"
+  },
+  "stockOrder": {
+    "orderNo": "Order No",
+    "userName": "User Name",
+    "stockName": "Stock Name",
+    "stockCode": "Stock Code",
+    "exchange": "Exchange",
+    "orderStatus": "Order Status",
+    "applyAmount": "Apply Amount",
+    "successAmount": "Success Amount",
+    "price": "Price",
+    "total": "Total",
+    "paid": "Paid",
+    "unpaid": "Unpaid",
+    "status": {
+      "converted": "Converted",
+      "notConverted": "Not Converted",
+      "processing": "Processing"
+    },
+    "addFeature": "Add feature not implemented",
+    "exportFeature": "Export feature not implemented"
+  }
+}
+

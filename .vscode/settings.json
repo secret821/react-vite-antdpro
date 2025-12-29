@@ -1,0 +1,48 @@
+{
+  // 设置默认格式化器为 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  
+  // 为特定文件类型设置格式化器
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  
+  // 使用项目的 Prettier 配置
+  "prettier.requireConfig": true,
+  
+  // 启用 Tailwind CSS 类名排序
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  
+  // 禁用 ESLint 格式化（避免冲突）
+  "eslint.format.enable": false
+}
+

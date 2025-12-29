@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+  }
+  html {
+    @apply overflow-x-hidden;
+  }
+  body {
+    @apply min-h-screen w-full bg-background text-foreground;
+    margin: 0;
+  }
+}
