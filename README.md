@@ -1,6 +1,6 @@
 # AntD Pro Lite
 
-基于 Vite + React + TypeScript + Ant Design Pro Components 的轻量级后台管理系统。
+基于 Vite + React + TypeScript + Ant Design Pro Components + tailwindv4 + @tanstack/react-query 的轻量级后台管理系统。
 
 ## 技术栈
 
