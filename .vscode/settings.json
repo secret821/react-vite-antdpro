@@ -43,6 +43,10 @@
   },
   
   // 禁用 ESLint 格式化（避免冲突）
-  "eslint.format.enable": false
+  "eslint.format.enable": false,
+  "i18n-ally.localesPaths": [
+    "src/i18n",
+    "src/i18n/locales"
+  ]
 }
 

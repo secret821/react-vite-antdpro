@@ -2,9 +2,20 @@ import { Card, Row, Col, Statistic } from 'antd'
 import { UserOutlined, ShoppingOutlined, DollarOutlined, RiseOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
 import { cx } from '@/utils/cn'
+import { useState } from 'react'
+import Globe from '@/components/Globe'
 
 export function Dashboard() {
   const { t } = useTranslation()
+  const [selectedCountryId, setSelectedCountryId] = useState<string | null>(null)
+  const [selectedCountryName, setSelectedCountryName] = useState<string>('')
+
+  const handleCountrySelect = (name: string, id: string) => {
+    setSelectedCountryId(id)
+    setSelectedCountryName(name)
+    console.log('Selected country:', name, id)
+  }
+
   return (
     <div>
       <div className="mb-6">
@@ -75,6 +86,29 @@ export function Dashboard() {
               suffix="%"
               valueStyle={{ color: '#16a34a', fontSize: '28px', fontWeight: 600 }}
             />
+          </Card>
+        </Col>
+      </Row>
+      <Row gutter={[24, 24]} className="mt-6">
+        <Col xs={24} lg={24}>
+          <Card
+            className={cx(
+              'hover:shadow-lg transition-all duration-300 border-0',
+            )}
+            title={
+              <div className="flex items-center justify-between">
+                <span>3D 地球仪</span>
+                {selectedCountryName && (
+                  <span className="text-sm font-normal text-gray-500">
+                    已选择: {selectedCountryName}
+                  </span>
+                )}
+              </div>
+            }
+          >
+            <div className="w-full" style={{ height: '600px' }}>
+              <Globe onCountrySelect={handleCountrySelect} selectedId={selectedCountryId} />
+            </div>
           </Card>
         </Col>
       </Row>
